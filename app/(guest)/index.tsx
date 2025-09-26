@@ -3,9 +3,10 @@ import {Link} from "expo-router";
 
 export default function Screen() {
     return (
-        <View>
+        <View style={{ padding: 25, gap: 25 }}>
             <Text>Guest index</Text>
-            <Link href={{
+            <Link style={{ textDecorationStyle: 'solid', textDecorationLine: 'underline' }}
+                  href={{
                 pathname: '/campaign-details/[id]',
                 params: {
                     id: '123'
